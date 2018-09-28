@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/water"
+    tools:context=".UploadEventActivity"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/eventname"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Name of your event"
+
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/eventdate"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Date of Event"
+
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@+id/eventvenue" />
+
+    <EditText
+        android:id="@+id/eventtime"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="time"
+
+        app:layout_constraintTop_toBottomOf="@+id/eventvenue" />
+
+
+    <EditText
+        android:id="@+id/eventvenue"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Venue"
+
+
+      />
+
+    <EditText
+        android:id="@+id/eventtype"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Technology,Sports,Cultural"
+
+        android:inputType="textPersonName"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <EditText
+        android:id="@+id/eventdescription"
+        android:layout_width="332dp"
+        android:layout_height="111dp"
+        android:ems="10"
+        android:inputType="textLongMessage"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:hint="Write about your awesome event! :)"
+
+        app:layout_constraintTop_toBottomOf="@+id/eventtime"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_weight="0.23" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+
+        tools:layout_editor_absoluteY="409dp"
+        tools:layout_editor_absoluteX="126dp" />
+
+
+</LinearLayout>
